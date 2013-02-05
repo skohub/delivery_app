@@ -1,0 +1,14 @@
+ru:
+  activerecord:
+    models:
+      delivery: Доставка
+    attributes:
+      delivery:
+        time: Время доставки
+        trip_time: Время в пути		
+    errors:
+      models:
+        delivery:
+          attributes:
+            time:
+              interfere: пересекается с другой доставкой

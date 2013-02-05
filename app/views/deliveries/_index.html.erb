@@ -1,0 +1,37 @@
+<h1>Список доставок</h1>
+
+<table>
+  <tr>
+    <th>Time</th>
+    <th>Distance</th>
+    <th>Driver</th>
+    <th>Car</th>
+    <th>Address</th>
+    <th>Phone</th>
+    <th>Name</th>
+    <th>Trip Time</th>
+    <th>Item Name</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @deliveries.each do |delivery| %>
+  <tr>
+    <td><%= delivery.time %></td>
+    <td><%= delivery.distance %></td>
+    <td><%= delivery.driver_id %></td>
+    <td><%= delivery.car_id %></td>
+    <td><%= delivery.address %></td>
+    <td><%= delivery.phone %></td>
+    <td><%= delivery.customer_name %></td>
+    <td><%= delivery.trip_time %></td>
+    <td><%= delivery.item_name %></td>
+    <td><%= link_to 'Show', delivery %></td>
+    <td><%= link_to 'Edit', edit_delivery_path(delivery) %></td>
+    <td><%= link_to 'Destroy', delivery, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />

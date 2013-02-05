@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Time:</b>
+  <%= @delivery.time %>
+</p>
+
+<p>
+  <b>Distance:</b>
+  <%= @delivery.distance %>
+</p>
+
+<p>
+  <b>Driver:</b>
+  <%= @delivery.driver_id %>
+</p>
+
+<p>
+  <b>Car:</b>
+  <%= @delivery.car_id %>
+</p>
+
+<p>
+  <b>Address:</b>
+  <%= @delivery.address %>
+</p>
+
+<p>
+  <b>Phone:</b>
+  <%= @delivery.phone %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @delivery.customer_name %>
+</p>
+
+
+<%= link_to 'Edit', edit_delivery_path(@delivery) %> |
+<%= link_to 'Back', deliveries_path %>
